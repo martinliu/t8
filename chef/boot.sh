@@ -1,1 +1,1 @@
-knife bootstrap --ssh-user root -P nutanix/4u  $web1ip  -N web1
+knife bootstrap --ssh-user root -P nutanix/4u  $web1ip  -N web1 --run-list "recipe[workstation],recipe[apache]"
